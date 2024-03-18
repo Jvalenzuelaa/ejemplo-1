@@ -1,0 +1,95 @@
+ * {
+    margin: 80;
+    padding: 90;
+    box-sizing: border-box;
+}
+
+html{
+    background-image: url("1014.jpg");
+}
+
+body {
+    font-family: Arial, sans-serif;
+    width: 400px;
+    height: 680px;
+    background: #4e4d5d;
+    margin: auto;
+    margin-top: 180px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid hsl(197, 99%, 34%);
+    color: white;
+}
+
+h5 {
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+    
+}
+
+output {
+    display: block;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+#numeroAleatorio {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+#fechaActual {
+    font-size: 18px;
+}
+
+p {
+    font-weight: bold;
+}
+
+h2 {
+    color: #333;
+    font-weight: bold;
+}
+
+.formulario {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+
+.buttons {
+    width: 150px;
+    height: 40px;
+    background: #017bab;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+}
+.controls {
+    width: 100%;
+    border: 1px solid #017bab;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #252323;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}

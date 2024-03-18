@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Incidencia</title>
+    <link rel="stylesheet" href="P2.css">
+</head>
+<body>
+ <selection class="form-login">
+    <h5>Registro de Indecencia</h5>
+    <p>Nº incidencia:<output for="numeroAleatorio" id="outputNumero"></output></p>
+    <p>Fecha: <time id="fechaActual"></time></p>
+    <script>
+        // Generar número aleatorio al cargar la página
+        var numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+        document.getElementById("outputNumero").textContent = numeroAleatorio;
+
+        // Mostrar la fecha actual
+        var fechaActual = new Date();
+        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById("fechaActual").textContent = fechaActual.toLocaleDateString('es-ES', options);
+    </script><form>
+        <label for="descripcion" required>Descripción de la Incidencia:</label>
+        <input class="controls" type="text" id="descripcion">
+        <label for="tipoIncidencia">Tipo de Incidencia:</label>
+        <select id="tipoIncidencia" class="controls">
+            <option value="software">Software</option>
+            <option value="hardware">Hardware</option>
+            <option value="ambos">Hardware y Software</option>
+            <option value="cau">Soporte CAU</option>
+            <option value="otros">Otros</option>
+        </select>
+        <label for="dispositivo">Dispositivo:</label>
+        <select id="dispositivo" class="controls">
+            <option value="sobremesa">Sobremesa</option>
+            <option value="portatil">Portátil</option>
+            <option value="tablet">Tablet</option>
+            <option value="otros">Otros</option>
+        </select>
+        <label for="nombreCliente">Nombre del Cliente:</label>
+        <input class="controls" type="text" id="nombreCliente" required>
+        <label for="rolCliente">Rol del Cliente:</label>
+        <select id="rolCliente" class="controls">
+            <option value="profesores">Profesores</option>
+            <option value="alumnos">Alumnos</option>
+            <option value="otros">Otros</option>
+        </select>
+        </selection>
+        </div></form>
+        <a href="P3.html" target="_blank"><button class="buttons">Registrar indicencia</button></a>  
+    
+
+</body>
+</html>
